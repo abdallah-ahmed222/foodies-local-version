@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Hachi+Maru+Pop&family=Jomhuria&family=Jost:wght@200;300;400;500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@200;400;500&family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@100;200;400;600;800&family=Roboto:ital,wght@0,300;0,400;0,700;1,400&family=Sarabun:ital,wght@0,500;0,600;1,300&family=Space+Mono:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --main-color :hsl(240deg 10% 8% );
+  --second-color: rgba(27, 155, 228, 0.11);
+  --in-color :#FFDD00;
+  --text-color :black ;
+  --second-text-color:white;
+  --btn-color:black;
+  --toastify-color-success : var(--in-color) !important
+}
+::selection{
+  background-color: transparent;
+}
+body {
+  margin: 0;
+}
+.section {
+
+  overflow: hidden;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.main-nav {
+  backdrop-filter: blur(20px);
+  background-color:transparent;
+  color : var( --second-text-color);     
+  box-shadow: 0px 2px 7px 4px rgb(64 80 110 / 20%);
+
+
+}
+.active{
+  background-color: #000000BD;
+  backdrop-filter: blur(12px);
+}
+.nav-logo {
+  width: 9rem;
+  height: 5rem ;
+}
+.app-nav__container {
+  font-size: 0.8rem;
+}
+.app-nav__link {
+  position: relative;
+  font-weight: 500 !important;
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+}
+.app-nav__link-color {
+  color: wheat;
+  transition: 0.3s;
+}
+.app-nav__link-color:hover {
+  color: var(--in-color);
+}
+.app-nav__link span {
+  left: 0;
+  position: absolute;
+  width: 0%;
+  background-color: var(--in-color);
+  height: 8%;
+  bottom: -20%;
+  transition: 0.3s;
+}
+.nav__link {
+  color: var(--in-color);
+}
+.app-nav__btn {
+  background-color: transparent !important;
+  border: 2px solid white!important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: 0.5s;
+  width: 150px;
+  font-weight: 500 !important;
+  padding: 10px !important;
+  margin: 10px;
+  margin-left: 15px;
+  font-family: 'Work Sans', sans-serif !important;
+  border-radius: 0 !important;
+}
+.app-nav__link:hover span {
+  width: 100%;
+}
+.nav-links__container {
+  width: 57%;
+}
+
+.heading-wraber {
+  font-weight: 800;
+}
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding-top: 7px;
+}
+.main-head {
+  background : linear-gradient(90deg, #000000 0%, #FFFFFF00 100%), url("./assets/background.jpg");
+  background-size: cover;
+  height: 50rem;
+  position: relative;
+  top: -90px;
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.hone-container {
+  width: 50%;
+  margin-top:6rem;
+  font-family:  "Bebas Neue", Sans-serif; 
+}
+.hone-container a {
+  width: 100px;
+  padding: 33px 0 !important;
+}
+.flavor-container{
+  font-family:  "Bebas Neue", Sans-serif;
+  padding: 150px 80px 210px 80px;
+}
+.serving-container{
+  font-family:  "Bebas Neue", Sans-serif;
+  padding: 210px 80px 0px 80px;
+}
+.sec-flavor-title{
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 4rem;
+  line-height: 1.1em;
+}
+.text-delicious{
+  font-family: 'Covered By Your Grace', cursive;
+  line-height: 1.2em;
+  font-size: 30px;
+}
+.sec-text{
+  font-family: "Lora", Sans-serif;
+  font-size: 1.1rem;
+  width: 75%;
+}
+.order-btn{
+ line-height: 0px !important;
+}
+.title-text{
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 4.5rem;
+  line-height: 1.1em;
+  width: 75%;
+}
+.heading-wraber .text {
+  color: var(--second-text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Work Sans', sans-serif;
+
+}
+.header-text{
+  font-family: "Bebas Neue", Sans-serif;
+    font-size: 8rem;
+    line-height: 1em;
+}
+.second-text{
+  font-size: 1.1rem;
+  color:var(--second-text-color) ;
+  font-family: 'Lora', serif;
+  margin: 0% 30% 0% 0%;
+  padding: 10px 0px 0px 0px;
+}
+.app-nav__btn.header{
+  width: 40%;
+  padding: 10px 0 !important;
+}
+
+.sec-flavor{
+  background-image:linear-gradient(90deg, rgba(27, 27, 28, 0.87) 0%, rgba(7, 7, 15, 0.837)100%, rgba(2, 16, 19, 0.798)00%), url("./assets/pngtree-seamless-pizza-ingredients-background-picture-image_1298691.jpg");
+  background-size: cover;
+  height: 47rem;
+  position: relative;
+  width: 50%;
+
+
+}
+
+.sec-pizza-flavor{
+  background-image: url("./assets/bacon-and-onion-tart-with-cream-2022-03-04-01-52-35-utc\ \(1\).jpg");
+  background-size: cover;
+  height: 47rem;
+  position: relative;
+  width: 50%;
+
+}
+
+
+.sec-serving-up{
+  background-image: url("./assets/pasta-2021-08-26-16-27-29-utc\ \(1\).jpg");
+  background-size: cover;
+  height: 47rem;
+  position: relative;
+  width: 50%;
+
+}
+
+.sec-serving{
+  background-image:linear-gradient(90deg, rgba(27, 27, 28, 0.87) 0%, rgba(7, 7, 15, 0.837)100%, rgba(2, 16, 19, 0.798)00%), url("./assets/pngtree-seamless-pizza-ingredients-background-picture-image_1298691.jpg");
+  background-size: cover;
+  height: 60rem;
+  width: 50%;
+}
+
+.sec-flavor .second-text{
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.side-dishes .sec-border{
+  width: 100px;
+}
+.side-dishes .text{
+  font-family: "Work Sans", Sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+.side-dishes .title{
+  font-family: "Bebas Neue", Sans-serif;
+    font-size: 3rem;
+    line-height: 1.1em;
+}
+
+.side-dishes .side-menu{
+  width: 50%;
+}
+.side-dishes .side-menu-two{
+  background-color: #000000;
+  height: 550px;
+  width: 50%;
+}
+.side-image-container {
+  height: 700px ;
+  overflow: hidden;
+}
+.side-header{
+  color: #FFFFFF;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 3rem;
+  line-height: 1.1em;
+}
+
+.sec-food-header span {
+  font-size: 5rem;
+}
+.side-menu-content{
+  padding: 110px 60px 100px 60px;
+}
+.side-menu-content-two{
+  padding:40px
+}
+
+
+.side-dishes .content{
+  border-bottom: 1px dashed #dcdcdc52;
+}
+.menu-content-desc{
+    color: #FFFFFFCF;
+    font-family: "Lora", Sans-serif;
+    font-size: 1rem;
+}
+
+
+
+.food-arrow{
+  transform: rotateZ(-83deg);
+}
+.sec-food-img{
+  vertical-align: middle;
+}
+
+.sec-food-btn{
+  color: #000000 !important;
+  background-color:var(--in-color) !important;
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 1.6rem !important;
+  width: 100px;
+  padding: 35px 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-canvas__link {
+  font-size: 0.8rem !important;
+  color: white !important;
+}
+
+.main-container__move {
+  height: 10px;
+}
+.main-container__move span {
+  background-color: var(--in-color);
+  height: 100%;
+  border-radius: 25px;
+  width: 10px;
+  display: block;
+  animation: expand 2s infinite ease;
+}
+@keyframes expand {
+
+  50% {
+    width:120px
+  }
+}
+.card-column {
+  width: 20%;
+}
+.item-card {
+  background-color: white !important;
+  height: 100%;
+  color: black;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  transition: 0.3s;
+}
+
+.card-img{
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.count {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 8px solid var(--main-color);
+  font-weight: bold;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  background:#2c2a30;
+  z-index: 1000;
+  color: var(--in-color);
+  transition: 0.3s;
+}
+
+.icon-container,
+.card-price {
+  color: var(--in-color);
+}
+.card-price_discount {
+  color: gray;
+  text-decoration: line-through;
+}
+.cart img {
+  width: 50%;
+  height: 50%;
+}
+.cart td {
+  line-height: 6;
+  text-align: center;
+}
+.last-div {
+  height: 22vh;
+}
+
+.last-div button,
+.ofcanvas-set button,
+.cart button
+{
+    background-color: var(--in-color) !important;
+    color: var(--btn-color) !important;
+    font-weight: 500;
+    display: flex;
+    width: 87px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+}
+.ofcanvas-set button {
+  padding: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50% ;
+
+}
+
+
+.app-nav__btn:hover,.card button:hover,.filter-btn:hover{
+  color: black !important ;
+  background-color: var(--in-color) !important;
+  border-color: #FFDD00 !important;
+}
+.last-div button:hover{
+  transform: scale(1.1);
+  box-shadow: var(--in-color) 0 1px 30px ;
+}
+.card button{
+  opacity: 0;
+  transition: 0.2s ease-in;
+ }
+ 
+ .new-btn {
+  font-size: 1.4rem;
+  color:black;
+  transition: 0.3s ease-in-out;
+ }
+ .new-btn:hover {
+  color: gray !important;
+ }
+ .card:hover button{
+  opacity: 1 !important;
+ }
+ 
+.cart-length {
+  top: -8px;
+  right: -17px;
+  position: absolute;
+  background:var(--in-color);
+  font-weight: bold;
+  margin: 0;
+  padding: 2px 0;
+  font-size: 0.7rem;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  color: var(--btn-color);
+}
+
+.width {
+  width : 80%
+}
+.slider-slide {
+  background-color: var(--main-color) !important;
+  transition: 0.5s;
+  border-radius: 6px;
+
+  border: 1px solid var(--in-color);
+  height: 100% !important;
+  text-align: center;
+}
+.track {
+  background-color: var(--second-color) !important;
+  transition: 0.5s;
+  border-radius: 6px;
+  box-shadow: 5px 6px 17px 2px var(--main-color);
+  height: 100% !important;
+  text-align: center;
+}
+.col {
+  height: inherit;
+}
+.track:hover {
+background-color: var(--main-color) !important;
+box-shadow: 5px 6px 17px 2px var(--second-color);
+
+}
+.track-icon {
+  color: var(--in-color);
+  font-size: 3.5rem;
+  margin: auto;
+  padding-top: 15px;
+}
+.ofcanvas-set {
+  background-color: var(--main-color) !important;
+}
+.modal-dialog.modal-lg.modal-dialog-centered {
+  margin: 28 20px !important;
+}
+.modal-content {
+  background-color: var(--main-color) !important;
+  width: 90% !important;
+
+}
+.modal-content  button{
+margin: 10px auto !important;
+}
+.filter-btn{
+  background-color: #FFFFFF !important;
+  border: 2px solid !important;
+  color: #000 !important;
+  padding: 5px 30px !important;
+  border-color: #000 !important;
+  border-radius: 0px !important;
+  width: 150px;
+
+}
+footer {
+  background : linear-gradient(180deg, #000000 0%, #FFFFFF00 270%), url("./assets/background.jpg");
+  background-size: cover;
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+}
+.footer__Dawnload 
+{
+  height: 80;
+}
+.footer-list {
+    width: calc(90% / 5);
+    color: #FFFFFF;
+    font-family: "Bebas Neue", Sans-serif;
+}
+.footer-list h2{
+
+    font-size: 30px;
+}
+
+.footer-list .text-time{
+  font-family: "Lora", Sans-serif;
+  font-size: 16px;
+}
+
+.footer-logo{
+  width: 180px !important;
+
+}
+.footer__Dawnload div {
+    padding-top: 5px;
+    transition: 0.3s;
+    margin: 10px 0;
+}
+.footer__Dawnload div:hover {
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.footer__upper-footer  {
+  border-bottom: 1px solid white;
+}
+
+.footer-contact a {
+  transition: 0.3s;
+  font-size: 1.3rem;
+  color: black;
+  background: #FFFFFF !important;
+}
+.footer-contact a:hover {
+color: #FFFFFF;
+background: black !important;
+}
+
+
+.card-two-list-footer li {
+  transition: 0.3s;
+}
+.card-two-list-footer a {
+  color: #a59999;
+  transition: 0.3s;
+
+}
+.card-two-list-footer li:hover {
+padding-left: 10px;
+}
+.card-two-list-footer li:hover a {
+  color: var(--in-color) !important;
+
+}
+reservation-contact a {
+  transition: 0.3s;
+  font-size: 1.5rem !important;
+  color: #FFFFFF !important;
+  background-color: black !important;
+}
+
+.reservation-contact a:hover {
+opacity: 0.7 !important;
+}
+
+ .form-label,.form-select,.form-select option{
+  color: #000000;
+  font-family: "Lora", Sans-serif !important;
+  font-weight: 500 !important;
+  text-transform: none;
+}
+ .form-control,.form-select{
+  background: #F2F2F2 !important;
+  color: #000000 !important;
+  border-color: #F2F2F2 !important;
+  border-radius: 0px !important;
+  padding: 13px 10px 13px 10px !important; 
+}
+.form-control:focus,.form-select:focus{
+border-color: #000 !important;
+outline: 0 !important;
+box-shadow: none !important;
+}
+
+.form-btn{
+  background: #FFFFFF !important;
+  color: #000000 !important;
+  border-color: #D1D1D1 !important;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 16px !important;
+  border-radius: 0px !important;
+
+}
+ .form-btn:hover{
+  background-color: #000 !important;
+  color: #FFFFFF !important;
+}
+
+
+
+
+.avaliable-img{
+  background-image: url("./assets/cutted-pizza.jpg");
+  background-size: cover;
+  height: 38rem;
+  position: relative;
+  width: 50%;
+}
+
+.sec-flavor.sec-avalible{
+  height: 38rem;
+}
+
+.sec-chief-flavor{
+  background-image: url("./assets/chef-cook-portrait-2022-05-11-02-56-57-utc.jpg");
+  background-size: cover;
+  height: 55rem;
+  position: relative;
+  width: 50%;
+
+}
+.sec-chief-two{
+  background-image: url("./assets/chef-serving-dishes-2021-09-24-03-13-46-utc-1.jpg");
+  background-size: cover;
+  height: 55rem;
+  position: relative;
+  width: 50%;
+}
+.sec-flavor-cheif{
+  background-image:linear-gradient(90deg, rgba(27, 27, 28, 0.87) 0%, rgba(7, 7, 15, 0.837)100%, rgba(2, 16, 19, 0.798)00%), url("./assets/pngtree-seamless-pizza-ingredients-background-picture-image_1298691.jpg");
+  background-size: cover;
+  height: 55rem;
+  position: relative;
+  width: 50%;
+}
+ .text-signature{
+  font-family: 'Satisfy', cursive;
+  font-size: 3rem;
+}
+
+.sec-chief-title{
+  font-family: "Bebas Neue", Sans-serif;
+  font-size: 7rem;
+  line-height: 1.1em;
+}
+
+.sec-food-header 
+{
+  font-size: 5rem
+}
+
+.text-time{
+  font-family: "Lora", Sans-serif;
+  font-size: 16px;
+}
+
+
+.avalibale-container{
+  font-family:  "Bebas Neue", Sans-serif;
+  padding: 100px 80px 210px 80px;
+}
+
+@media (max-width:576px) {
+ html {
+  font-size: 10px !important;
+ }
+ .side-dishes .side-menu {
+  width: 100% ;
+ }
+ .hone-container a {
+  width: 85px;
+ }
+ .hone-container p {
+  margin: auto !important;
+
+ }
+ .app-nav__btn.header {
+  width: 40%;
+ }
+ .sec-flavor,
+ .sec-pizza-flavor {
+  width: 100% !important;
+ }
+ .flavor-container {
+  padding:60px 20px;
+ }
+ .avalibale-container{
+  padding: 40px 20px !important;
+ }
+}
+
+@media (min-width:577px) and (max-width:757px) {
+  .ofcanvas-set {
+    width: 50% !important;
+  }
+ html {
+  font-size: 13px !important ;
+ }
+ .hone-container p {
+  margin: auto !important;
+ }
+ .sec-flavor,
+ .sec-pizza-flavor,
+ .sec-serving-up ,
+ .heading-wraber
+ {
+  width: 100% !important;
+ }
+ .avalibale-container{
+  padding: 40px 20px !important;
+ }
+ .side-dishes .side-menu {
+  width: 80%;
+ }
+}
+@media (max-width:991px) {
+  .hone-container {
+    width: 100%;
+    height: 100%; 
+  }
+  .app-nav__btn {
+    width: 50px;
+  }
+  .hone-container p {
+    margin: auto !important;
+   }
+   .sec-flavor,
+   .sec-pizza-flavor,
+   .sec-serving-up {
+    width: 100% !important;
+   }
+
+}
+@media (max-width:1200px) {
+  .nav-links__container{
+    width: 70%;
+  }
+}
